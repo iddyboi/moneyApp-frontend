@@ -1,0 +1,51 @@
+@import '../../scss/global';
+
+.card {
+  display: flex;
+  padding: 1em 0;
+  width: 60%;
+  margin: 2rem 0;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  padding-right: 1em;
+  border-radius: 10px;
+  padding-left: 1em;
+  @include for-size(phone-only) {
+    width: 100%;
+  }
+
+  &__letter {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 1rem;
+  }
+  &__info {
+    &--name {
+      font-weight: 800;
+    }
+    &--sub-name {
+      font-weight: 100;
+    }
+  }
+  &__amount {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #58b09c;
+  }
+}
+.card-red {
+  border-left: 2px solid rgb(230, 0, 38);
+}
+.card-green {
+  border-left: 2px solid rgb(104, 255, 74);
+}

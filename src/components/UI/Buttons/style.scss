@@ -1,0 +1,15 @@
+@import '../../../scss/global';
+.ui-button {
+  border: none;
+  background-color: $primary-color;
+  color: $white;
+  font-weight: 700;
+  padding: rem(8) rem(44);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.8s ease-in;
+  margin-right: 1em;
+  bordertop &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}

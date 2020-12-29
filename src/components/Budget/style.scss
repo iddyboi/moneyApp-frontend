@@ -1,0 +1,25 @@
+@import '../../scss/global';
+
+.budget-calculator {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  @include for-size(phone-only) {
+    grid-template-columns: 1fr;
+  }
+  gap: 1rem;
+  &__inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1em 0;
+  }
+}
+
+.budget-card {
+  background-color: #ff385c;
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+}

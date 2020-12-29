@@ -1,0 +1,7 @@
+@import '../scss/global';
+.home {
+}
+.mortage-hero {
+  @include container;
+  padding-top: 100px;
+}
